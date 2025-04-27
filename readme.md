@@ -35,6 +35,23 @@ cd multiagent-article-researcher-writer
 pip install -r requirements.txt
 ```
 
+## Configuration
+
+Before running the application, you need to set up your API keys:
+
+1. Copy the template config file:
+   ```bash
+   cp config.json.template config.json
+   ```
+
+2. Edit the `config.json` file and add your API keys:
+   - `openai_api_key`: Your OpenAI API key
+   - `serper_api_key`: Your Serper API key for web search
+   - `model`: The OpenAI model to use (default: gpt-4-turbo-preview)
+   - `temperature`: The temperature setting for the model (default: 0.7)
+
+The `config.json` file is ignored by git to protect your API keys.
+
 ## Usage
 
 Instructions for using the application will be added as development progresses.
